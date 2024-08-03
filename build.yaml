@@ -1,0 +1,12 @@
+targets:
+  $default:
+    sources:     
+      - swaggers/**
+      - lib/**
+    builders:
+      swagger_dart_code_generator:
+        options:
+          input_folder: "lib/modelhttps://api.goljaam.com/api/v1/swagger/"
+          output_folder: "lib/modelhttps://api.goljaam.com/api/v1/generated/"
+          separate_models: true
+          include_if_null: false
